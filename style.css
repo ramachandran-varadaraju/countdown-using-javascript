@@ -1,0 +1,124 @@
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  background-color: #f1faee;
+  min-height: 100vh;
+  gap: 1rem;
+  /* padding-bottom: 6rem; */
+}
+
+.container .content {
+  flex: 1 1 400px;
+}
+
+.container .image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.container .image img {
+  width: 100%;
+}
+
+/* .container .image:hover {
+  scale: 1.1;
+} */
+
+.container .content .title {
+  /* font-size: clamp(1rem, calc(5vw + 0.5rem), 2.5rem); */
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  color: #1d3557;
+  letter-spacing: 2.5px;
+}
+
+.container .content p {
+  line-height: 1.5;
+  color: #457b9d;
+  padding: 0.5rem 0;
+  letter-spacing: 1px;
+}
+
+.container .content .count-down {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.container .content .count-down .box {
+  padding: 0.5rem;
+  background-color: #a8dadc;
+  border: 1px solid #1d3557;
+  text-align: center;
+  flex: 1 1 1.2rem;
+  border-radius: 3px;
+}
+
+.container .content .count-down .box h3 {
+  font-size: 3.12rem;
+  color: #f1faee;
+}
+
+.container .content .count-down .box span {
+  font-size: 1.25rem;
+  color: #1d3557;
+}
+
+.container .content .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  /* margin: 1rem 0; */
+  background: #1d3557;
+  color: #f1faee;
+  border-radius: 3px;
+  transition: 0.2s ease-in;
+  font-weight: bold;
+}
+
+.container .content .btn:hover,
+.container .content .btn:active {
+  letter-spacing: 3px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 1.2rem;
+  }
+
+  .container .content {
+    text-align: center;
+  }
+
+  .container.content .title {
+    font-size: 2.1rem;
+  }
+
+  .container .content p {
+    font-size: 0.9rem;
+  }
+
+  .container .content .count-down {
+    gap: 0.5rem;
+  }
+
+  .container .content .count-down .box h3 {
+    font-size: 2rem;
+  }
+
+  .container .content .count-down .box span {
+    font-size: 1rem;
+  }
+}
